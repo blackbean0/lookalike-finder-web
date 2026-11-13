@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>닮은꼴 찾기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="panel panel-photo">
+      <img id="photo" alt="기준 사진" hidden>
+      <div id="photoMessage" class="message">사진을 불러오는 중...</div>
+    </section>
+    <section class="panel panel-camera">
+      <video id="camera" autoplay muted playsinline hidden></video>
+      <div id="cameraMessage" class="message">카메라를 준비하는 중...</div>
+    </section>
+  </main>
+
+  <footer class="bar">
+    <span id="counter" class="counter">- / -</span>
+    <span id="cameraStatus" class="camera-status" hidden></span>
+    <span class="hints">
+      <kbd>Space</kbd> 다음 사진
+      <span class="divider">·</span>
+      <kbd>&larr;</kbd> 이전 사진
+      <span class="divider">·</span>
+      <kbd>C</kbd> 카메라 전환
+    </span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
